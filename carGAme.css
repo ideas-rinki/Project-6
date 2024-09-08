@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 80rem;
+    width:100%;
+    background-image: url("carGame/cloud.jpeg");
+   
+    background-size: cover;
+    background-repeat:no repeat;
+}
+.trees img{
+    height: 60rem;
+    width:100%;
+    background-image: url("carGame/g.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 14px;
+}
+.track img{
+    height: 25rem;
+    width: 800vw;
+    position: absolute;
+    bottom: 0;
+    animation: carMove 1s linear 0s infinite normal;
+
+}
+
+.car img{
+    height: 15rem;
+    width: 43rem;
+    position: absolute;
+    bottom: 21rem;
+    left: 40rem;
+    animation: turmoil 0.19s infinite normal;
+}
+.wheel img{
+    height: 9rem;
+    width: 9rem;
+    position: absolute;
+    bottom: 17rem;
+    left:45rem ;
+    border-radius: 50%;
+    animation: wheelRotation o.1s ease-in 0s infinite normal;
+
+}
+body{
+    overflow: hidden;
+   
+}
+.wheel1 img{
+    height: 9rem;
+    width: 9rem;
+    position: absolute;
+    bottom: 17rem;
+    left:68rem ;
+    border-radius: 50%;
+    animation: wheelRotation .0.1s ease-in 0s infinite normal;
+}
+@keyframes wheelRotation{
+100%{
+    transform: rotate(360deg);
+}
+}
+/* @keyframes wheelRotation{
+    100%{
+        transform: rotate(360deg);
+    }
+    } */
+    @keyframes carMove{
+        100%{
+            transform: translateX(-700rem)
+        }
+    }
+    @keyframes turmoil{
+        0%{
+            transform: translateY(-5px);
+        }
+        50%{
+            transform: translateY(7px);
+        }
+        100%{
+            transform: translateY(-5px);
+        }
+    }
+    @keyframes shakebody{
+        0%{
+            transform: translateY(-3px);
+        }
+        50%{
+            transform: translateY(4px);
+        }
+        100%{
+            transform: translateY(-3px);
+        }
+    }
